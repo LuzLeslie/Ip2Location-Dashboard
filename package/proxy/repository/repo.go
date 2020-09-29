@@ -23,7 +23,7 @@ func (p *ProxyRepo) GetInfo(ip string) (*models.Proxy, error) {
 	dbIp2Proxy, err := ip2proxy.OpenDB(p.pathBin)
 
 	if err != nil {
-		log.Fatal("Database proxy open failed: ", err)
+		log.Error("Database proxy open failed: ", err)
 		return nil, errors.New("Database open failed")
 	}
 

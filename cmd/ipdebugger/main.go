@@ -40,14 +40,16 @@ var rootCmd = &cobra.Command{
 		ip2location, _ = cmd.Flags().GetString("ip2location")
 		ip2proxy, _ = cmd.Flags().GetString("ip2proxy")
 
-		createApp()
+		if ip2proxy == "" && ip2location == "" {
+			log.Error("Error: requires at least 1 database")
+			fmt.Println("Error: requires at least 1 database")
+			cmd.Help()
+			os.Exit(0)
+		}
 
-		// if ip2proxy == "" && ip2location == "" {
-		// 	log.Error("Error: requires at least 1 database")
-		// 	fmt.Println("Error: requires at least 1 database")
-		// 	cmd.Help()
-		// 	os.Exit(0)
-		// }
+
+
+		createApp(ip2location)
 
 		// h, err := hanlderGraphql.NewHandler()
 		// if err != nil {
@@ -66,17 +68,18 @@ var rootCmd = &cobra.Command{
 	},
 }
 
-func createApp() {
+func createApp(pathLocationBin string) {
 	log.Debug("App starting...")
 
 	dbConn := simpleDB.New()
 	analyzeRepo := analyzeRepository.New(dbConn)
 
-	pathLocationBin := "./tmp/IP2LOCATION-LITE-DB11.BIN"
+	// pathLocationBin := "./tmp/IP2LOCATION-LITE-DB11.BIN"
 	locationRepo := locationRepository.New(pathLocationBin)
 	locationUcase := locationUseCase.New(locationRepo)
 
-	pathProxyBin := "./tmp/IP2PROXY-LITE-PX10.BIN"
+	// pathProxyBin := "./tmp/IP2PROXY-LITE-PX10.BIN"
+	pathProxyBin := ""
 	proxyRepo := proxyRepository.New(pathProxyBin)
 	proxyUcase := proxyUseCase.New(proxyRepo)
 

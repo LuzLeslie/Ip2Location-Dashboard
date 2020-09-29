@@ -40,21 +40,22 @@ func (a *AnalyzeUseCase) GetInfoIp(ip string) (*models.Ip, error) {
 	}
 
 	a.analyzeRepo.SaveLog(info)
-	a.updateTopCountrys(info.Country_name)
+	a.updateTopCountrys(info)
 
 	return info, nil
 }
 
-func (a *AnalyzeUseCase) updateTopCountrys(countryName string) {
+func (a *AnalyzeUseCase) updateTopCountrys(info *models.Ip) {
 	currentTopCountrys, _ := a.analyzeRepo.GetTopCountrys()
-	possibleId := getIdCountry(currentTopCountrys, countryName)
+	possibleId := getIdCountry(currentTopCountrys, info.Country_name)
 
 	if possibleId != -1 {
 		a.analyzeRepo.IncreaseTopCountry(possibleId)
 	} else {
 		newCountry := models.TopCountrys{
-			Name:     countryName,
+			Name:     info.Country_name,
 			Quantity: 1,
+			Code:     info.Country_code,
 		}
 		a.analyzeRepo.AddNewTopCountry(newCountry)
 	}

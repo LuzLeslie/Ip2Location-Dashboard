@@ -14,9 +14,9 @@ var TopCountrysType = graphql.NewObject(
 			"quantity": &graphql.Field{
 				Type: graphql.Int,
 			},
-			// "percentage": &graphql.Field{
-			// 	Type: graphql.Int,
-			// },
+			"code": &graphql.Field{
+				Type: graphql.String,
+			},
 		},
 	},
 )
