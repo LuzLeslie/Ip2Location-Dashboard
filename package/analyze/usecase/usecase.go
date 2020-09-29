@@ -1,10 +1,10 @@
 package usecase
 
 import (
-	models "github.com/LuzLeslie/ip-debugger/domain/models"
-	analyzeRepo "github.com/LuzLeslie/ip-debugger/package/analyze/repository"
-	locationUseCase "github.com/LuzLeslie/ip-debugger/package/location/usecase"
-	proxyUseCase "github.com/LuzLeslie/ip-debugger/package/proxy/usecase"
+	models "github.com/LuzLeslie/Ip2Location-Dashboard/domain/models"
+	analyzeRepo "github.com/LuzLeslie/Ip2Location-Dashboard/package/analyze/repository"
+	locationUseCase "github.com/LuzLeslie/Ip2Location-Dashboard/package/location/usecase"
+	proxyUseCase "github.com/LuzLeslie/Ip2Location-Dashboard/package/proxy/usecase"
 	log "github.com/sirupsen/logrus"
 	"strconv"
 )

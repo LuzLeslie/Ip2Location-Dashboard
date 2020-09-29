@@ -1,8 +1,8 @@
 package usecase
 
 import (
-	models "github.com/LuzLeslie/ip-debugger/domain/models"
-	proxyRepository "github.com/LuzLeslie/ip-debugger/package/proxy/repository"
+	models "github.com/LuzLeslie/Ip2Location-Dashboard/domain/models"
+	proxyRepository "github.com/LuzLeslie/Ip2Location-Dashboard/package/proxy/repository"
 	// log "github.com/sirupsen/logrus"
 )
 

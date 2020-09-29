@@ -1,7 +1,7 @@
 package graphql
 
 import (
-	ipInfo "github.com/LuzLeslie/ip-debugger/infrastructure/delivery/graphql/type"
+	ipInfo "github.com/LuzLeslie/Ip2Location-Dashboard/infrastructure/delivery/graphql/type"
 	"github.com/graphql-go/graphql"
 	// log "github.com/sirupsen/logrus"
 )

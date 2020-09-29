@@ -1,8 +1,8 @@
 package repository
 
 import (
-	models "github.com/LuzLeslie/ip-debugger/domain/models"
-	simpleDB "github.com/LuzLeslie/ip-debugger/infrastructure/datastore/simpleDB"
+	models "github.com/LuzLeslie/Ip2Location-Dashboard/domain/models"
+	simpleDB "github.com/LuzLeslie/Ip2Location-Dashboard/infrastructure/datastore/simpleDB"
 	// log "github.com/sirupsen/logrus"
 )
 

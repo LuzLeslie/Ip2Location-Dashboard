@@ -1,7 +1,7 @@
 package graphql
 
 import (
-	analyzeuc "github.com/LuzLeslie/ip-debugger/package/analyze/usecase"
+	analyzeuc "github.com/LuzLeslie/Ip2Location-Dashboard/package/analyze/usecase"
 	"github.com/graphql-go/graphql"
 	// log "github.com/sirupsen/logrus"
 )

@@ -3,7 +3,7 @@ package repository
 import (
 	"errors"
 	// "fmt"
-	models "github.com/LuzLeslie/ip-debugger/domain/models"
+	models "github.com/LuzLeslie/Ip2Location-Dashboard/domain/models"
 	"github.com/ip2location/ip2location-go"
 	log "github.com/sirupsen/logrus"
 )

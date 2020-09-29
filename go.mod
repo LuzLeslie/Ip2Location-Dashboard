@@ -1,4 +1,4 @@
-module github.com/LuzLeslie/ip-debugger
+module github.com/LuzLeslie/Ip2Location-Dashboard
 
 go 1.14
 

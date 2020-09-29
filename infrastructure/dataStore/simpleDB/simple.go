@@ -1,7 +1,7 @@
 package simpleDB
 
 import (
-	models "github.com/LuzLeslie/ip-debugger/domain/models"
+	models "github.com/LuzLeslie/Ip2Location-Dashboard/domain/models"
 	// log "github.com/sirupsen/logrus"
 )
 
