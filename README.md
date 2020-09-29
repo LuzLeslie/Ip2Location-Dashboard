@@ -35,7 +35,7 @@ curl --request POST \
 ## Prerequisites
 
 - [Go](https://golang.org)
-- [IP2Location and IP2Proxy - Database](https://ip2location.com/)
+- [IP2Location - IP2Proxy(optional) - Database .bin](https://ip2location.com/)
 - [NodeJS](https://nodejs.org)
 
 ## Installation
