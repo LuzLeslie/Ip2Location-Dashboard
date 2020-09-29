@@ -33,7 +33,7 @@ Tool to analyze IP addresses and visualize the results graphically with statisti
 
 ---
 - [Go](https://golang.org)
-- [IP2Location and IP2Proxy - Database](https://ip2location.com/)
+- [IP2Location - IP2Proxy(optional) - Database .bin](https://ip2location.com/)
 - [NodeJS](https://nodejs.org)
 
 ### Installation
@@ -45,7 +45,7 @@ Tool to analyze IP addresses and visualize the results graphically with statisti
 ```bash
 git clone --depth=1 -b backend https://github.com/LuzLeslie/Ip2Location-Dashboard.git ip2Dashboard-backend
 cd ip2Dashboard-backend
-go run ./cmd/ipdebugger/ -l /path/ip2location.bin -p /path/ip2proxy.bin
+go run ./cmd/ipdebugger -l /path/ip2location.bin -p /path/ip2proxy.bin
 ```
 > More details in  [![](https://img.shields.io/badge/branch-backend-orange?style=flat)](https://github.com/LuzLeslie/Ip2Location-Dashboard/tree/backend)
 
