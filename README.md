@@ -1,6 +1,9 @@
-# Ip2Location Dashboard ![](https://img.shields.io/github/issues/LuzLeslie/Ip2Location-Dashboard) ![](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat) ![](https://img.shields.io/badge/Go-1.13.x-blue) ![](https://img.shields.io/badge/NodeJS-12.x-blue) ![](https://img.shields.io/badge/Vue-2.x-blue)
+# Ip2Location Dashboard
 
 Tool to analyze IP addresses and visualize the results graphically with statistics. To make decisions, useful for public servers with multiple connections.
+
+[![DeepSource](https://deepsource.io/gh/LuzLeslie/Ip2Location-Dashboard.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/LuzLeslie/Ip2Location-Dashboard/?ref=repository-badge)
+![](https://img.shields.io/github/issues/LuzLeslie/Ip2Location-Dashboard) ![](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat) ![](https://img.shields.io/badge/Go-1.13.x-blue) ![](https://img.shields.io/badge/NodeJS-12.x-blue) ![](https://img.shields.io/badge/Vue-2.x-blue)
 
 ## Features
  
