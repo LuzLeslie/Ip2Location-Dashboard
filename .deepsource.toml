@@ -3,3 +3,7 @@ version = 1
 [[analyzers]]
 name = "go"
 enabled = true
+
+  [analyzers.meta]
+  import_paths = ["github.com/LuzLeslie/Ip2Location-Dashboard/cmd/ipdebugger"]
+  import_root = "github.com/LuzLeslie/Ip2Location-Dashboard"
